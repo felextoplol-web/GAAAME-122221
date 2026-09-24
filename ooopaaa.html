@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровой Магазин</title>
+    <!-- Подключаем наш CSS файл -->
+    <link rel="stylesheet" href="./bla bla bla.css">
+    <!-- Подключаем иконки FontAwesome (для значка корзины) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Gemini<span>Store</span></div>
+            <div class="nav-links">
+                <a href="#">Магазин</a>
+                <a href="#">Библиотека</a>
+                <a href="#">Сообщество</a>
+            </div>
+            <div class="cart-btn" id="cartBtn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный баннер -->
+    <header class="hero">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/capsule_616x353.jpg" alt="Cyberpunk 2077" class="hero-img">
+        <div class="hero-content">
+            <h1>Cyberpunk 2077</h1>
+            <p>Приключенческая ролевая игра с открытым миром, действие которой происходит в мегаполисе Найт-Сити.</p>
+            <div class="hero-actions">
+                <span class="hero-price">2999 ₽</span>
+                <button class="buy-btn" onclick="addToCart('Cyberpunk 2077')">В корзину</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Сетка популярных игр -->
+    <main class="container">
+        <h2 class="section-title">Лидеры продаж</h2>
+        <div class="grid">
+            <!-- Игра 1 -->
+            <div class="card">
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg" alt="CS2">
+                <div class="card-info">
+                    <h3>Counter-Strike 2</h3>
+                    <div class="card-bottom">
+                        <span class="price free">Бесплатно</span>
+                        <button class="add-btn" onclick="addToCart('Counter-Strike 2')">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Игра 2 -->
+            <div class="card">
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg" alt="Dota 2">
+                <div class="card-info">
+                    <h3>Dota 2</h3>
+                    <div class="card-bottom">
+                        <span class="price free">Бесплатно</span>
+                        <button class="add-btn" onclick="addToCart('Dota 2')">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Игра 3 -->
+            <div class="card">
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA V">
+                <div class="card-info">
+                    <h3>Grand Theft Auto V</h3>
+                    <div class="card-bottom">
+                        <span class="price">1499 ₽</span>
+                        <button class="add-btn" onclick="addToCart('GTA V')">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Игра 4 -->
+            <div class="card">
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/220/header.jpg" alt="Half-Life 2">
+                <div class="card-info">
+                    <h3>Half-Life 2</h3>
+                    <div class="card-bottom">
+                        <span class="price">385 ₽</span>
+                        <button class="add-btn" onclick="addToCart('Half-Life 2')">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Игра 5 -->
+            <div class="card">
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg" alt="Baldur's Gate 3">
+                <div class="card-info">
+                    <h3>Baldur's Gate 3</h3>
+                    <div class="card-bottom">
+                        <span class="price">1999 ₽</span>
+                        <button class="add-btn" onclick="addToCart('Baldur\'s Gate 3')">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Игра 6 -->
+            <div class="card">
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/252490/header.jpg" alt="Rust">
+                <div class="card-info">
+                    <h3>Rust</h3>
+                    <div class="card-bottom">
+                        <span class="price">1100 ₽</span>
+                        <button class="add-btn" onclick="addToCart('Rust')">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Уведомление (Toast) -->
+    <div id="toast" class="toast">Игра добавлена в корзину!</div>
+
+    <!-- Подключаем наш JS файл -->
+    <script src="./ahahahaha.js"></script>
+</body>
+</html>
